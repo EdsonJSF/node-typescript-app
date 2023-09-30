@@ -1,3 +1,6 @@
-export const name = "Node Typescript App";
+import dotenv from "dotenv";
+import Server from "./models/server";
+dotenv.config();
 
-console.log(name);
+const server = new Server();
+server.listen();
